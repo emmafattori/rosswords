@@ -156,6 +156,7 @@ p {
 
 .core-left-content{
 	width: 60%;
+	margin: 3% 0;
 }
 
 .core-left-content img{
@@ -166,6 +167,10 @@ p {
 	width: 40%;
 	text-align: right;
 	margin-left: 3%;
+}
+
+.core-right-content li{
+	margin: 1% 0;
 }
 
 #core ul {
@@ -179,3 +184,68 @@ li {
 	padding: 1% 0;
 	color: #62656B;
 }
+
+/* Start of Projects Styling */
+
+.projects-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.projects-right {
+	margin-top: 8%;
+	width: 40%;
+    text-align: center;
+    background-color: lightgrey;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.freelance{
+	margin: 4% 0;
+}
+
+.freelance h4{
+	margin: 2% 0;
+}
+
+/* Contact Section Styling */
+
+#contact .inner-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	margin-top: 5%;
+}
+
+#contact .contact-info {
+	width:45%;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact .contact-info span {
+	margin: 4% 0;
+}
+
+#contact .inner-wrapper form{
+	display: flex;
+	flex-direction: column;
+	margin: 5% 0;
+}
+
+#contact .inner-wrapper input {
+	margin: 3% 0;
+}
+
+/* Footer Styling */
+footer{
+	background-color: #4A4D54;
+}
+footer p {
+	text-align: center;
+	padding: 2% 0;
+	color: white;
+}
+
