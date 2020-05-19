@@ -249,3 +249,20 @@ footer p {
 	color: white;
 }
 
+/* Media Queries */
+
+@media(max-width: 820px){
+	.work-content, 
+	.core-content, 
+	.projects-content, 
+	#contact .inner-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.core-left-content, 
+	.core-right-content, 
+	.projects-right{
+		width: 100%;
+	}
+}
