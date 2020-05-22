@@ -51,6 +51,57 @@ ul {
     justify-content: space-evenly;
 }
 
+.mobile-nav{
+	display: block;
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+	font-size: 2rem;
+}
+
+.mobile-icon{
+	color: white;
+}
+
+
+
+/* Mobile Nav Classes */
+.mobile{
+	display: none;
+}
+
+@media (max-width: 700px){
+	.top-header nav{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+		font-size: 40px;
+		z-index: 60000;
+		padding:10px;
+	}
+
+	body > div > header > div.top-header > div.phone-container{
+		display: none;
+	}
+
+}
+
+
+
 a {
     text-decoration: none;
     color: #8C8D8F;
@@ -266,3 +317,5 @@ footer p {
 		width: 100%;
 	}
 }
+
+
