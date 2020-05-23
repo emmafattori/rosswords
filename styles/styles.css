@@ -42,8 +42,6 @@ img {
 
 nav {
     width: 50%;
-
-
 }
 
 ul {
@@ -52,7 +50,7 @@ ul {
 }
 
 .mobile-nav{
-	display: block;
+	display: none;
     background-color: black;
     height: 100vh;
     position: absolute;
@@ -60,6 +58,10 @@ ul {
     right: 0;
     left: 0;
     width: 100%;
+}
+
+.open {
+	display: block;
 }
 
 .mobile-ul{
@@ -82,8 +84,9 @@ ul {
 	display: none;
 }
 
+
 @media (max-width: 700px){
-	.top-header nav{
+	.top-header .desktop-nav{
 		display: none;
 	}
 
@@ -115,6 +118,11 @@ a {
 a:hover{
     color: black;
     border-bottom: 2px solid black;
+}
+
+
+.mobile-ul li a:hover {
+	color: white;
 }
 .phone-container {
     display: flex;
@@ -155,7 +163,11 @@ h3{
     font-family: 'Oswald', sans-serif;
 }
 
+section {
+	margin-top: 12%;
+}
 /* How we work section styling */
+
 
 .inner-wrapper {
     width: 85%;
@@ -261,6 +273,11 @@ li {
 	margin: 2% 0;
 }
 
+#projects > div > div > div.projects-right > div.top, 
+#projects > div > div > div.projects-right > div.top {
+	margin: 3% 0;
+}
+
 /* Contact Section Styling */
 
 #contact .inner-wrapper {
@@ -285,6 +302,14 @@ li {
 	flex-direction: column;
 	margin: 5% 0;
 }
+
+#contact .inner-wrapper form input::placeholder, 
+#contact .inner-wrapper form textarea::placeholder, 
+input[type=submit]{
+	font-family: 'Oswald', sans-serif;
+}
+
+
 
 #contact .inner-wrapper input {
 	margin: 3% 0;
@@ -315,6 +340,11 @@ footer p {
 	.core-right-content, 
 	.projects-right{
 		width: 100%;
+	}
+
+	#contact .contact-info {
+		width: 100%;
+		text-align: center;
 	}
 }
 

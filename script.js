@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$('.mobile').on('click', function(){
-		$('nav').addClass('mobile-nav')
+		$('.mobile-nav').toggleClass('open');
+		$('.mobile > i').toggleClass('mobile-icon')
+	
 	})
 });
