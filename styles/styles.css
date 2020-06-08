@@ -131,6 +131,11 @@ a:hover{
     font-family: 'Oswald', sans-serif;
 }
 
+body > div > header > div.top-header > div.phone-container > i {
+	padding-bottom: 5%;
+	padding-right: 3%;
+}
+
 i {
     padding-right: 5%;
 }
